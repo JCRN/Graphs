@@ -16,10 +16,7 @@ def earliest_ancestor(ancestors, starting_node):
     for (parent, child) in ancestors:
         ancestor_tree.add_edge(parent, child)
 
-    # Keep track of # ancestors
-    longest_path = 1
-          
-    # Store last node (as an integer)
+    longest_path = 1          
     earliest_ancestor = 0 
     
     for vertex in ancestor_tree.vertices:
